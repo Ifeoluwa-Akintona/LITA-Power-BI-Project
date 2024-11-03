@@ -201,3 +201,105 @@ DIVIDE(
 - Regional Performance: Pinpoints regions with the highest sales potential. The analysis shows that in regards to quantity of product sold, the 'South Region' sold the highest number of products. In regards to revenue, in the year 2023; the 'South Region' generated the highest revenue with a percentage total of 43.5% while the 'West Region' generated the lowest revenue with a percentage total of 8%.
   
   In the year 2024, the 'South Region' still came on top and generated the highest revenue with a percentage total of 45% while the 'East Region' generated the lowest revenue with a percentage total of 9.2%.
+
+
+
+
+
+# Power BI Customer Data Analysis Project
+
+## 1. Introduction
+This project leverages Power BI to transform raw data into actionable insights, helping [target audience, e.g., management, stakeholders, clients] make data-driven decisions. This report documents each step, from data acquisition to dashboard creation and insights.
+
+## 2. Project Objectives
+a) Primary Goal: To provide a comprehensive view of [project-specific goal, e.g., customer behavior in subscription services].
+  
+b) Secondary Objectives:
+- Identify key performance indicators (KPIs) to track [e.g., subscription retention, average subscription duration].
+
+- Enable filtering of data by parameters such as [Region, Subscription Type].
+Provide a visual summary of trends such as cancellations, renewals, and revenue growth.
+
+## 3. Data Sources and Description
+
+### Data Source: The dataset was provided by LITA 
+
+### Description of Columns:
+| Column                                     | Description                                              |
+|--------------------------------------------|----------------------------------------------------------|
+| Customer ID                                | Unique identifier for each customer.                     |
+| Customer Name                              | The name of the customer.                                |
+| Region                                     | Geographical location of the customer.                   |
+| Subscription Type                          | Type of subscription held by the customer.               |
+| Subscription Start and Subscription End    | Dates marking the subscription period.                   |
+| Status                                     | Indicates if the subscription is “Active” or “Inactive.” |
+| Revenue                                    | Total revenue generated from the subscription.           |
+| Duration                                   | The length of the subscription in months.                |
+
+## 4. Data Cleaning and Preparation
+
+### Data Cleaning Steps:
+
+a) Null Handling: Removed rows with missing values in critical fields like Subscription Start, Subscription End.
+b) Data Transformation: Converted date fields to a standard format and calculated Duration where necessary.
+c) Calculated Columns:
+- Active Subscription Count: Count of active subscriptions based on Status.
+- Average Subscription Duration: Calculated the average duration across all customers.
+d) Data Validation:
+- Ensured no duplicate Customer IDs.
+- Checked data consistency for each region and subscription type.
+
+## 5. Data Analysis
+Key Analyses Conducted:
+
+- Customer Churn Analysis: Filtered Status = "Inactive" and "Active"; calculated the percentage of cancellations
+- Revenue Analysis: Summed the total revenue for each subscription type and region.
+- Duration Analysis: Calculated average and maximum subscription durations.
+
+### DAX Measures:
+a) DAX Measure for calculating active subscription count:
+`Active Subscription Count = CALCULATE(COUNTA('Clean Data'[Status]), 'Clean Data'[Status] = "Active")`
+
+b) DAX Measure for calculating inactive subscription count:
+`Inactive Subscription Count = CALCULATE(COUNTA('Clean Data'[Status]), 'Clean Data'[Status] = "Inactive")`
+
+c) DAX Measure for calculating cancellation rate:
+`Cancellation Rate = DIVIDE(
+        [Inactive Subscription Count], 
+        ([Inactive Subscription Count] + [Active Subscription Count]), 
+        0)`
+
+## 6. Dashboard Design and Key Metrics
+The dashboard was designed with an emphasis on usability and clarity. Each section focuses on specific insights for quick interpretation.
+
+Main Sections:
+Subscription Overview: Displays total active and inactive subscriptions.
+Financial Metrics: Highlights revenue breakdown by region and subscription type.
+Subscription Duration: Visualizes average, minimum, and maximum durations.
+Churn Rate Analysis: Presents the cancellation rate for early cancellations.
+Filters and Slicers: Allows users to filter by region, subscription type, and time range to analyze data at a more granular level.
+7. Insights and Observations
+Based on the dashboard and analysis:
+
+Customer Churn: Customers are more likely to cancel within the first 6 months for [specific subscription type].
+Revenue Trends: Region [e.g., North America] contributes the highest revenue, with [specific subscription type] as the top contributor.
+Average Duration: The average subscription duration across all customers is [specific duration] months, indicating a strong customer retention trend.
+8. Future Enhancements
+Potential areas for improvement include:
+
+Predictive Analytics: Integrate machine learning models to predict customer churn.
+Advanced Segmentation: Expand segmentation by demographic variables if additional data becomes available.
+Automated Refresh: Set up a scheduled refresh in Power BI to update data in real-time.
+9. Conclusion
+The Power BI project successfully visualizes key insights for [objective, e.g., monitoring customer subscription trends]. The dashboard serves as a powerful tool for [stakeholders] to make data-informed decisions, enabling them to improve customer retention and drive revenue growth.
+
+Files and Project Structure on GitHub
+Data: Folder with sanitized sample data files (if allowed).
+SQL Queries: Contains any SQL scripts used in the project.
+DAX Measures: List of all DAX measures created in Power BI.
+Power BI File: The .pbix file for the Power BI dashboard.
+ReadMe.md: A brief overview of the project with setup instructions.
+Final Note
+For more details, refer to the Project Documentation on GitHub, which includes setup instructions and technical notes.
+
+
