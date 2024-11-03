@@ -272,18 +272,20 @@ c) DAX Measure for calculating cancellation rate:
 ## 6. Dashboard Design and Key Metrics
 The dashboard was designed with an emphasis on usability and clarity. Each section focuses on specific insights for quick interpretation.
 
-Main Sections:
-Subscription Overview: Displays total active and inactive subscriptions.
-Financial Metrics: Highlights revenue breakdown by region and subscription type.
-Subscription Duration: Visualizes average, minimum, and maximum durations.
-Churn Rate Analysis: Presents the cancellation rate for early cancellations.
-Filters and Slicers: Allows users to filter by region, subscription type, and time range to analyze data at a more granular level.
-7. Insights and Observations
+#### Visualization:
+- Customer Data/Overview: Displayes total number of customers, the total active and inactive subscription, the total revenue generated and the cancellation rate. 
+- Subscription Overview: Displays total active and inactive subscriptions, also displays the subscription start year and end year. 
+- Financial Metrics: Highlights revenue breakdown by status and subscription type.
+- Churn Rate Analysis: Presents the cancellation rate.
+- Filters and Slicers: Allows users to filter by region, subscription type, and time range to analyze data at a more granular level.
+
+## 7. Insights and Observations
 Based on the dashboard and analysis:
 
-Customer Churn: Customers are more likely to cancel within the first 6 months for [specific subscription type].
-Revenue Trends: Region [e.g., North America] contributes the highest revenue, with [specific subscription type] as the top contributor.
-Average Duration: The average subscription duration across all customers is [specific duration] months, indicating a strong customer retention trend.
+Customer Churn: Customers are more likely to cancel within the first 6 months for [the Basic Subscription Type].
+Revenue Trends: Region [The south] contributes the highest revenue, with [Basic subscription type] as the top contributor.
+Average Duration: The average subscription duration across all customers is [366] days, indicating a strong customer retention trend.
+
 8. Future Enhancements
 Potential areas for improvement include:
 
