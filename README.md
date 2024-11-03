@@ -158,7 +158,32 @@ DIVIDE(
     Purpose: Shows the total revenue generated monthly by each region.
 
    <img width="352" alt="Monthly Revenue" src="https://github.com/user-attachments/assets/68848db2-8324-4831-8314-f746f6d44751">
-   
+
+
+### Overall Visualizations. 
+- The Landing Page;
+<img width="620" alt="Landing Page" src="https://github.com/user-attachments/assets/3dff9268-ad93-4a39-b18a-c56f0f44ec8d">
+
+
+- The Sales Overview;
+<img width="614" alt="Sales Overview" src="https://github.com/user-attachments/assets/ad6124a7-11b9-457d-8ed8-49d7b241da73">
+
+
+- The Product Performance (Filtered to top 3)
+<img width="614" alt="Product Performance" src="https://github.com/user-attachments/assets/ec69ba69-0229-4ace-942a-77127fa0742c">
+
+
+- The Product Performance (Filtered to bottom 3)
+<img width="617" alt="PP" src="https://github.com/user-attachments/assets/a1704296-6349-4e94-b15e-9213c838c2dc">
+
+
+- The Regional Performance (Filtered to year 2023)
+<img width="617" alt="2023 RP" src="https://github.com/user-attachments/assets/d6e67ced-6a8d-47b3-842c-6b8cfb6ef232">
+
+
+- The Regional Performance (Filtered to year 2024)
+<img width="616" alt="2024 RP" src="https://github.com/user-attachments/assets/c741d8a9-c4de-4f0c-89d7-72d9d1a066ee">
+
 
 
 ### Insights and Conclusion
