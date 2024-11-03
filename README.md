@@ -16,8 +16,9 @@ This Power BI project uses sales data from 2023 to 2024 to analyze product perfo
 ### Dataset
 
 #### Columns
-|| Column Name ||	Description                                         ||
-|| Customer_id ||	Unique identifier for the customer                  ||
+| Column Name |	Description                                         |
+|-------------|-----------------------------------------------------|
+| Customer_id |	Unique identifier for the customer                  |
 | Day	        | Day of the order                                    |
 | Month	      | Month in which the sale occurred                    |
 | Order_date  |	Date when the order was placed                      |
@@ -70,13 +71,21 @@ DIVIDE(
    
    Y-axis: Total Revenue
    
+   <img width="497" alt="Monthly Trend" src="https://github.com/user-attachments/assets/24bda564-87eb-4fa4-b63d-1788aac2ebf4">
+
+   
+   
 2. Top 3 Performing Products by Region.
    
    Type: Matrix
    
    Purpose: Shows the top three (3) products with the highest revenue in each region.
+   
+   <img width="263" alt="Top 3" src="https://github.com/user-attachments/assets/84deb571-d48c-4d59-bfff-0e4e16b5a851">
 
-3. Total Revenue Per Product.
+   
+
+3. Total Revenue Per Product. (Filtered to the top 3)
    
    Type: Bar Chart
    
@@ -87,6 +96,10 @@ DIVIDE(
    X-axis: Product
    
    Y-axis: Rank product by Revenue
+   
+   <img width="373" alt="Total Rev per Product" src="https://github.com/user-attachments/assets/a06b77aa-c38c-4cfd-b0b7-f77836624498">
+   
+
 
 4. Total Quantity Per Product.
    
@@ -97,12 +110,20 @@ DIVIDE(
    X-axis: Product
    
    Y-axis: Rank product by Quantity
+   
+   <img width="368" alt="Total Q Per Product" src="https://github.com/user-attachments/assets/a83d958b-6a27-4967-8adc-fb84bdefb416">
+   
+
 
 5. Total Number Of Customers Per Region.
    
    Type: TreeMap
    
    Purpose: Shows the total number of customers per region.
+
+   <img width="398" alt="Customer Per Region" src="https://github.com/user-attachments/assets/c8dfeeac-3545-486a-ae37-231f424f5db5">
+
+   
 
 6. Yearly Trend
    
@@ -116,17 +137,29 @@ DIVIDE(
    
    Y-axis: Total Revenue
 
+   <img width="398" alt="Yearly Trend" src="https://github.com/user-attachments/assets/be02093f-bc48-46e5-8f0f-48abff53c94a">
+
+   
+   
 7. Total Quantity Sold Per Region.
    
    Type: Donut Chart
    
    Purpose: Shows the total quantity of products sold in each region.
+   
+   <img width="354" alt="Quantity sold per region" src="https://github.com/user-attachments/assets/e84026e1-2732-40d5-a224-aa54cef5647c">
+
+
 
 8. Monthly Revenue Per Region.
    
     Type: Table
    
-    Purpose: Shows the total revenue generated monthly by each region. 
+    Purpose: Shows the total revenue generated monthly by each region.
+
+   <img width="352" alt="Monthly Revenue" src="https://github.com/user-attachments/assets/68848db2-8324-4831-8314-f746f6d44751">
+   
+
 
 ### Insights and Conclusion
 - Product Performance: The analysis provides insights showing that the product 'Shoes' generated the highest revenue with a percentage total of 29.2% while the product 'Socks' generated the lowest revenue with a percentage total of 8.6%.
